@@ -1,0 +1,772 @@
+<?xml version="1.0"?>
+<!-- BAE Hawk -->
+
+<PropertyList>
+ <sim>
+
+  <description>BAE_Hawk T2(YASim).</description>
+  <author>Daniel "Intel-Qube" Strawn, StuartC</author>
+<aircraft-version>2.9.9</aircraft-version>
+    <status>2.9.9 BETA</status>
+	<rating>
+<FDM type="int">4</FDM>
+<systems type="int">3</systems>
+<cockpit type="int">3</cockpit>
+<model type="int">3</model>
+</rating>
+	
+<instrumentation>
+			<path>Aircraft/BAE-Hawk/Systems/instrumentation.xml</path>
+		</instrumentation>
+
+
+<systems>
+      <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+      <autopilot>
+        <path>Aircraft/BAE-Hawk/systems/autopilot3.xml</path>
+      </autopilot>
+    </systems>
+	
+<mp-systems>
+<radar-enabled type="bool">true</radar-enabled>
+<ecm-rwr-enabled type="bool">true</ecm-rwr-enabled>
+<combat-enabled type="bool">true</combat-enabled>
+</mp-systems>	
+	
+<model>
+<path>Aircraft/BAE-Hawk/Models/BAE_Hawk_T2.xml</path>
+
+</model>
+
+<!--sub models -->
+    <submodels>
+      <serviceable type="bool">3</serviceable>
+      <path>Aircraft/BAE-Hawk/Models/weapons/loads.xml</path>
+	  <path>Aircraft/BAE-Hawk/Models/Effects/guns/submodels.xml</path>
+
+    </submodels>
+	
+	
+<hud>
+<path n="1">Aircraft/BAE-Hawk/Hud/hud.xml</path>
+<path n="2">Aircraft/BAE-Hawk/Hud/nav.xml</path>
+<path n="3">Aircraft/BAE-Hawk/Hud/land.xml</path>
+<visibility n="1">true</visibility>
+   <palette>
+    <color n="0">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">0.38</red>
+     <green type="float">1.0</green>
+     <blue type="float">0.22</blue>
+    </color>
+    <color n="1">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">1.0</red>
+     <green type="float">0.2</green>
+     <blue type="float">0.0</blue>
+    </color>
+   </palette>
+ <clipping>
+            <left type="double">-60</left>
+            <right type="double">60</right>
+            <top type="double">80</top>
+            <bottom type="double">-80</bottom>
+         </clipping>
+
+</hud>
+
+
+ <startup>
+  <splash-texture>Aircraft/BAE-Hawk/splash.jpg</splash-texture> 
+  </startup>
+
+	<previews>
+	  <preview>
+		<type>interior</type>
+		<splash type="bool">true</splash>
+		<path>Splash/splash.png</path>
+	  </preview>
+	  <preview>
+		<type>exterior</type>
+		<splash type="bool">true</splash>
+		<path>Splash/splash1.png</path>
+	  </preview>
+	  <preview>
+		<type>exterior</type>
+		<splash type="bool">true</splash>
+		<path>Splash/splash2.png</path>
+	  </preview>
+	  <preview>
+		<type>exterior</type>
+		<splash type="bool">true</splash>
+		<path>Splash/splash3.png</path>
+	  </preview>
+	  <preview>
+		<type>exterior</type>
+		<splash type="bool">true</splash>
+		<path>Splash/splash4.png</path>
+	  </preview>
+	  <preview>
+		<type>exterior</type>
+		<splash type="bool">true</splash>
+		<path>Splash/splash5.png</path>
+	  </preview>
+	</previews>
+
+
+  <virtual-cockpit archive="y">false</virtual-cockpit>
+  
+  
+  <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+	  
+	    <!-- Nav lights on -->
+      <int n="0" alias="/controls/lighting/nav-lights-switch" />
+      <!-- Beacon on -->
+      <int n="1" alias="/controls/lighting/beacon-switch" />
+      
+      <!-- int[2] reserved for radar -->
+      
+      <!-- Landing lights on -->
+      <int n="3" alias="/controls/lighting/landing-lights-switch" />
+	  
+                                              
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" > 0 </int>              <!--  7 smoke colour -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+       
+      </generic>
+    </multiplay>
+
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y">0</x-offset-m>
+    <y-offset-m archive="y">1.03</y-offset-m>
+    <z-offset-m archive="y">2.9</z-offset-m>
+   <!--  <pitch-offset-deg>-14</pitch-offset-deg> -->
+    <default-field-of-view-deg>86.3</default-field-of-view-deg>
+   </config>
+  </view>
+  <current-view>
+    <field-of-view>60.0</field-of-view>
+  </current-view>
+
+<view n="100">
+	<name>Instructor View</name>
+	<internal archive="y">true</internal>
+	<type>lookfrom</type>
+	<config>
+		<from-model type="bool">true</from-model>
+		<from-model-idx type="int">0</from-model-idx>
+		<x-offset-m archive="y">0</x-offset-m>
+    <y-offset-m archive="y">1.4</y-offset-m>
+    <z-offset-m archive="y">4.35</z-offset-m>
+		<!-- <pitch-offset-deg>-10</pitch-offset-deg> -->
+		<default-field-of-view-deg>76.3</default-field-of-view-deg>
+	</config>
+
+</view>
+
+ <view n="101">
+    <name>Pilot cam</name>
+        <internal archive="y">false</internal>
+        <config>
+		 <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+          <x-offset-m archive="y">0</x-offset-m>
+    <y-offset-m archive="y">1.07</y-offset-m>
+    <z-offset-m archive="y">2.5</z-offset-m>
+          <pitch-offset-deg>0</pitch-offset-deg>
+		  <heading-offset-deg>180</heading-offset-deg>
+          <default-field-of-view-deg>95</default-field-of-view-deg>
+        </config>
+     
+  </view>
+<!-- Shift the camera target point back -->
+    <view n="1">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+
+    <view n="2">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+
+    <view n="3">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+	
+	<view n="4">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+	
+	<view n="5">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+	
+	<view n="6">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+	
+	<view n="7">
+      <config>
+        <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+		<pitch-offset-deg archive="y">15</pitch-offset-deg>
+		<roll-offset-deg archive="y">1.5</roll-offset-deg>
+      </config>
+    </view>
+	
+
+  <flight-model>yasim</flight-model>
+  <aero>hawk-yasim</aero>
+  <fuel-fraction>1.0</fuel-fraction>
+
+  <sound>
+   <path>Aircraft/BAE-Hawk/Sounds/sound.xml</path>
+  </sound>
+
+  <panel>
+    <visibility>false</visibility>
+  </panel>
+
+<engines>
+<engine n="0">
+<running>false</running>
+</engine>
+</engines>
+
+  <aoa-indexer>
+   <too-slow-deg>15.0</too-slow-deg>
+   <slow-deg>14.0</slow-deg>
+   <fast-deg>13.0</fast-deg>
+   <too-fast-deg>12.0</too-fast-deg>
+  </aoa-indexer>
+
+  <hud>
+   <enable3d>true</enable3d>
+  </hud>
+
+  <help>
+   <title>BAE Hawk</title>
+    <key>
+     <name>}</name>
+     <desc>Start Engine</desc>
+   </key>
+   <key>
+     <name>S</name>
+     <desc>Start Smoke</desc>
+   </key>
+   <key>
+     <name>u</name>
+     <desc>Stop smoke</desc>
+   </key>
+   <key>
+     <name>Ctrl+b</name>
+     <desc>Airbrake Toggle</desc>
+   </key>
+   <line> Take off and landing speeds relate to a clean aircaft.</line>
+	<line>Take-Off:</line>
+	<line>Increase throttle to %100.
+You needn't use flaps on take off. Press CTRL-B to release the parking brake.
+Push up at 150-170kts.</line>
+	<line>Landing:</line>
+	<line>Extend flaps to first seting and reduced speed to about 140kts.
+Once you hit the run-way, reduce throttle completely,
+engage the wheel brakes and deploy the airbrake.
+</line>
+<line> Stall warnings start at 130 kts.</line>
+<line>expect issues at 120kts with complete input failure  at 90 kts </line>
+<line> MAXIMUM SAFE TAKEOFF WEIGHT - 20000 lb </line>
+<line>Exceed the Max take off weight at your own pearl.</line>
+<line>for take off at Max Payload, use 1 click of flaps and gently pull back on the stick at 160-170kt</line>
+<line> WARNING. Flying the hawk at it max payload will severely affect  performance in all areas of the envelope !!! </line> 
+<line> Select the colour of your display smoke from the "hawk" menu</line>
+  </help>
+  
+<menubar include="Dialogs/menu.xml"/>
+
+
+
+<weight n="0">
+<name>pylon1.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+
+<weight n="1">
+<name>pylon2.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+<opt>
+<name>ALQ-101 ECM pod</name>
+<lbs>335.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="2">
+<name>pylon3.L</name>
+<tank>4</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>1500 l Droptank</name>
+<lbs>245.0</lbs>
+<gals>396</gals>
+</opt>
+<opt>
+<name>1000 l Droptank</name>
+<lbs>204.0</lbs>
+<gals>211</gals>
+</opt>
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="3">
+<name>pylon.C</name>
+<tank>5</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>1000 l Droptank</name>
+<lbs>204.0</lbs>
+<gals>211</gals>
+</opt>
+<opt>
+<name>ADEN-Cannon</name>
+<lbs>187.392</lbs>
+</opt>
+
+</weight>
+
+
+<weight n="4">
+<name>pylon3.R</name>
+<tank>6</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>1500 l Droptank</name>
+<lbs>245.0</lbs>
+<gals>396</gals>
+</opt>
+<opt>
+<name>1000 l Droptank</name>
+<lbs>204.0</lbs>
+<gals>211</gals>
+</opt>
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="5">
+<name>pylon2.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+<opt>
+<name>ALQ-101 ECM pod</name>
+<lbs>335.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="6">
+<name>pylon1.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9</name>
+<lbs>190.0</lbs>
+</opt>
+</weight>
+    		
+ </sim>
+ 
+ 
+ 
+<systems>
+<refuel>
+<type>probe</type>
+<serviceable type="bool">true</serviceable>
+</refuel>
+    </systems>
+ 
+ 
+<controls>
+<smoke alias="/sim/multiplay/generic/int[6]"/>
+    <color type="int" alias="/sim/multiplay/generic/int[7]">0</color>
+<gear>
+<brake-parking type="double">1.0</brake-parking>
+</gear>
+<armament>
+			<station n="0">
+				<release type="bool">false</release>
+			</station>
+			<station n="1">
+				<release type="bool">false</release>
+			</station>
+			<station n="2">
+				<release type="bool">false</release>
+			</station>
+			<station n="3">
+				<release type="bool">false</release>
+			</station>
+			<station n="4">
+				<release type="bool">false</release>
+			</station>
+			<station n="5">
+				<release type="bool">false</release>
+			</station>
+			<station n="6">
+				<release type="bool">false</release>
+			</station>
+			
+</armament>	
+</controls>
+
+
+<input>
+<keyboard include="Nasal/keyboard.xml"/>
+</input> 
+
+
+
+<environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+
+<controls>
+	<gear>
+	<brake-parking>0</brake-parking>
+	</gear>
+	<engines>
+	<engine>
+	<throttle>0</throttle>
+	</engine>
+	</engines>
+</controls>
+
+
+
+<consumables>
+<fuel>
+<tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">253</level-gal_us>
+      </tank>
+<tank n="1">
+        <tank-num type="int">1</tank-num>
+        <level-gal_us archive="y">253</level-gal_us>
+      </tank>
+<tank n="2">
+        <tank-num type="int">2</tank-num>
+        <level-gal_us archive="y">200</level-gal_us>
+      </tank>
+<tank n="3">
+        <tank-num type="int">3</tank-num>
+        <level-gal_us archive="y">200</level-gal_us>
+      </tank>
+
+<tank n="4">
+        <name>left wing Droptank</name>
+        <selected type="bool">false</selected>
+      </tank>
+
+<tank n="5">
+        <name>centerline Droptank</name>
+        <selected type="bool">false</selected>
+      </tank>
+<tank n="6">
+        <name>right wing Droptank</name>
+        <selected type="bool">false</selected>
+      </tank> 
+    </fuel>
+
+</consumables>
+
+
+
+<instrumentation>
+
+<rwr>
+<display-lighting-intens type="double">0.4</display-lighting-intens>
+<symbology-lighting-intens type="double">1</symbology-lighting-intens>
+</rwr>
+
+<enav><selected type="int">3</selected></enav>
+<radar>
+      <range type="int" archive="y">20</range>
+      <range-factor type="double" archive="n">0.001888</range-factor>
+      <minimized type="bool" archive="y">false</minimized>
+      <selected type="int">3</selected>
+
+
+      <!-- inicio en pruebas -->
+	<enabled type="bool">true</enabled>
+	<az-field type="double">120</az-field>
+	<range type="double">150</range>
+	<range-selected type="double">50</range-selected>
+	<radar2-range type="double">150</radar2-range>
+	<display-rdr type="bool">true</display-rdr>
+	<radar-standby type="int">3</radar-standby>
+	<mode>
+	    <rws type="bool">true</rws>
+	    <tws-auto type="bool">false</tws-auto>
+	</mode>
+
+ </radar> 
+
+    <terrain-radar>
+      <hi-elev>
+        <alt-ft type="double">-9999.9</alt-ft>
+        <lat-deg type="double">-9999.9</lat-deg>
+        <lon-deg type="double">-9999.9</lon-deg>
+        <dist-m type="double">-9999.9</dist-m>
+        <collision-status type="string">initialised</collision-status>
+      </hi-elev>
+      <settings>
+        <mode type="string">extend</mode>
+        <state type="string">off</state>
+        <range-m type="double">2500</range-m>
+        <step-m type="double">250</step-m>
+        <max-climb-rate-fps type="double">120</max-climb-rate-fps>
+        <hi-elev-markers type="bool">false</hi-elev-markers>
+      </settings>
+    </terrain-radar>
+	
+	<MDEF>
+  <subsystem-selected type="string">aids</subsystem-selected>
+ </MDEF>
+    <magnetic-compass>
+       <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
+    </magnetic-compass>
+	<tacan>
+	 <power type="bool">1</power>
+	</tacan>
+  <warnings>
+   <warning-suppress type="bool">false</warning-suppress>
+   <attention-lights type="bool">false</attention-lights>
+   <signals>
+    <cat-1-warning type="bool">false</cat-1-warning>
+	<cat-2-warning type="bool">false</cat-2-warning> 
+	<cat-3-warning type="bool">false</cat-3-warning> 
+	<cat-4-warning type="bool">false</cat-4-warning>   
+   </signals>
+   <flags>
+    <gear-limit type="bool">true</gear-limit>
+   </flags>
+  </warnings>
+  
+  <efis>
+
+			<ecam>
+					<display-mode type="string">FUEL</display-mode>
+			</ecam>
+			<nd>
+					<display-mode type="string">VOR</display-mode>
+					<display-mode-knob type="int">2</display-mode-knob>
+					<display-range type="int">40</display-range>
+				
+			</nd>
+			<input>
+				<vor-adf-1 type="int">1</vor-adf-1>
+				<vor-adf-2 type="int">1</vor-adf-2>
+				<CSTR type="bool">1</CSTR>
+				<WPT type="bool">1</WPT>
+				<VORD type="bool">1</VORD>
+				<NDB type="bool">1</NDB>
+				<ARPT type="bool">1</ARPT>
+				<WX type="bool">1</WX>
+				<TERR type="bool">1</TERR>
+				<TRAF type="bool">1</TRAF>
+				<taxi type="bool">1</taxi>
+			</input>
+
+		
+		</efis>
+  </instrumentation>
+
+
+
+
+ <nasal>
+ 
+<Hawk>
+
+
+ <file>Aircraft/BAE-Hawk/Nasal/liveries.nas</file>
+</Hawk>
+
+<computers>
+		 <file>Aircraft/BAE-Hawk/Nasal/computers.nas</file>
+		</computers>
+
+<lights>
+      <file>Aircraft/BAE-Hawk/Nasal/Lights.nas</file>
+    </lights>
+
+<HAWK_fuel>
+   <file>Aircraft/BAE-Hawk/Nasal/fuel.nas</file>
+  </HAWK_fuel>
+
+<guns>
+      <file>Aircraft/BAE-Hawk/Nasal/weapons.nas</file>
+      <file>Aircraft/BAE-Hawk/Nasal/revi.nas</file>
+</guns>
+
+<doors>
+<file>Aircraft/BAE-Hawk/Nasal/doors.nas</file>
+</doors>
+
+<low>
+<file>Aircraft/BAE-Hawk/Nasal/low.nas</file>
+</low>
+
+ <terrain-map>
+      <file>Aircraft/BAE-Hawk/Nasal/terrain-map.nas</file>
+    </terrain-map> 
+
+<electrical>
+	<file>Aircraft/BAE-Hawk/Nasal/electrical.nas</file>
+</electrical>
+
+<enav>
+    <file>Aircraft/BAE-Hawk/Nasal/enav.nas</file>
+</enav>
+
+<radar>
+      <file>Aircraft/BAE-Hawk/Instruments/mfd/radar.nas</file>
+</radar>
+<radar2>
+	<file>Aircraft/BAE-Hawk/Nasal/radar2.nas</file>
+</radar2>
+<rwr>
+	<file>Aircraft/BAE-Hawk/Nasal/rwr.nas</file>
+</rwr>
+<radardist>
+	<file>Aircraft/BAE-Hawk/Nasal/radardist.nas</file>
+</radardist>
+
+<nav_scripts>
+	<file>Aircraft/BAE-Hawk/Nasal/nav_scripts.nas</file>
+</nav_scripts>
+
+<aar>
+<file>Aircraft/Generic/aar.nas</file>
+</aar>
+
+<engines>
+      <file>Aircraft/BAE-Hawk/Nasal/generic-yasim-engine.nas</file>
+      <script>
+        var engine1 = engines.Jet.new(0, 0, 0.01, 5.21, 3, 5, 1, 6);
+        setlistener("sim/signals/fdm-initialized", func
+        {
+          engine1.init();
+        }, 0, 0);
+       </script>
+    </engines>
+
+ </nasal>
+
+</PropertyList>
+
