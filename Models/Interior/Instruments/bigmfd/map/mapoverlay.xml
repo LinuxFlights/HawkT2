@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+
+<!--
+command interface /autopilot/route-manager/input:
+
+  @clear             ... clear route
+  @pop               ... remove first entry
+  @delete3           ... delete 4th entry
+  @insert2:ksfo@900  ... insert "ksfo@900" as 3rd entry
+  ksfo@900           ... append "ksfo@900"
+
+-->
+
+<PropertyList>
+    <name>mappverlay</name>
+    
+
+    <color>
+        <red type="float">0.41</red>
+        <green type="float">0.4</green>
+        <blue type="float">0.42</blue>
+        <alpha type="float">1.0</alpha>
+        <alpha type="float">1.0</alpha>
+    </color>
+<!--
+    <nasal>
+        <open>
+            var mapDialog = cmdarg();
+            var setTransparency = func(updateDialog){
+                var alpha = (getprop("/gui/map/transparent") or 0);
+                mapDialog.getNode("color/alpha").setValue(1-alpha*0.3);
+                mapDialog.getNode("color/red").setValue(0.41-alpha*0.2);
+                mapDialog.getNode("color/green").setValue(0.4-alpha*0.2);
+                mapDialog.getNode("color/blue").setValue(0.42-alpha*0.2);
+                var n = props.Node.new({ "dialog-name": "map" });
+                if (updateDialog)
+                {
+                    fgcommand("dialog-close", n);
+                    fgcommand("dialog-show", n);
+                }
+            }
+            setTransparency(0);
+        </open>
+
+        <close>
+
+        </close>
+    </nasal>
+-->
+      
+
+       
+           
+
+                <animation>
+                    <name>Fixes</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/draw-fixes</property>
+                    <value>true</value>
+                   
+                </animation>
+
+                <animation>
+                    <name>Navaids</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/draw-navaids</property>
+                    <value>true</value>
+                    
+                </animation>
+
+
+                <animation>
+                    <name>Traffic</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/draw-traffic</property>
+                    <value>true</value>
+                   
+                </animation>
+
+
+
+                <animation>
+                    <name>Data</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/draw-data</property>
+                    <value>true</value>
+                  
+                </animation>
+                
+                
+                
+              
+
+                <animation>
+                    <name>Magnetic Hdgs</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/magnetic-headings</property>
+                    <value>true</value>
+                   
+                </animation>
+
+                <animation>
+                    <name>Center on Acft</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/centre-on-aircraft</property>
+                   
+                </animation>
+
+                <animation>
+                    <name>Aircraft Hdg Up</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/aircraft-heading-up</property>
+                    <value>true</value>
+                   
+                </animation>
+
+                <animation>
+                    <name>Transparent</name>
+                    <pref-width>100</pref-width>
+                    <property>/gui/map/transparent</property>
+                    <value>true</value>
+                   
+                </animation>
+
+               
+
+
+
+           
+                
+                <map>
+                    <!-- <halign>fill</halign> -->
+                    <valign>fill</valign>
+                    <halign>fill</halign>
+                    <stretch>true</stretch>
+                    <pref-height>400</pref-height>
+                    <pref-width>600</pref-width>
+                    <property>/gui/map</property>
+                </map>
+            
+              
+              <!--  
+                <group>
+                    <layout>hbox</layout>
+                    
+                    <button>
+                        <name>zoomout</name>
+                        <legend>-</legend>
+                        <pref-width>22</pref-width>
+                        <pref-height>22</pref-height>
+
+                        <binding>
+                            <command>property-adjust</command>
+                            <property>/gui/map/zoom</property>
+                            <min>0</min>
+                            <step>-1</step>
+                        </binding>
+                    </button>
+                    
+                    <text>
+                        <name>MMM</name>
+                        <format>Zoom %d</format>
+                        <property>/gui/map/zoom</property>
+                        <value>true</value>
+                    </text>
+                    
+                    <button>
+                        <name>zoomin</name>
+                        <legend>+</legend>
+                        <pref-width>22</pref-width>
+                        <pref-height>22</pref-height>
+
+                        <binding>
+                            <command>property-adjust</command>
+                            <property>/gui/map/zoom</property>
+                            <step>1</step>
+                            <max>12</max>
+                        </binding>
+                    </button>
+                </group>
+            </group>
+            
+        </group>-->
+</PropertyList>
+

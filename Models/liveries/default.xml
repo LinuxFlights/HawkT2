@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Default</name>
+     <texture-fuselage>liveries/riat/hawkfuse.jpg</texture-fuselage>
+     <texture-wings>liveries/riat/hawkwings.jpg</texture-wings>
+	 <texture-pilot>liveries/riat/RAFpilot.png</texture-pilot>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

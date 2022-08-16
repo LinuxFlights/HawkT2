@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Aircraft/BAE-Hawk/Models/weapons/ADENpod.ac</path>
+
+  <animation>
+    <object-name>ADENCannon</object-name>
+  </animation>
+
+</PropertyList>

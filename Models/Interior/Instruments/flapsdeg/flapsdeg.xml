@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>flapsdeg.ac</path>
+
+<animation>
+	<name>R.needle</name>
+	<type>rotate</type>
+	<object-name>R.needle</object-name>
+	<property>surface-positions/slat-pos-norm</property>
+      <factor>30</factor>
+	<center>
+	<x-m>0</x-m>
+	<y-m>0</y-m>
+	<z-m>0</z-m>
+	</center>
+	<axis>
+	<x>-1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<name>R.needle</name>
+	<type>rotate</type>
+	<object-name>R.needle</object-name>
+	<property>surface-positions/flap-pos-norm</property>
+      <factor>15</factor>
+	<center>
+	<x-m>0</x-m>
+	<y-m>0</y-m>
+	<z-m>0</z-m>
+	</center>
+	<axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<name>L.needle</name>
+	<type>rotate</type>
+	<object-name>L.needle</object-name>
+	<property>surface-positions/slat-pos-norm</property>
+      <factor>-30</factor>
+	<center>
+	<x-m>0</x-m>
+	<y-m>0</y-m>
+	<z-m>0</z-m>
+	</center>
+	<axis>
+	<x>-1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<name>L.needle</name>
+	<type>rotate</type>
+	<object-name>L.needle</object-name>
+	<property>surface-positions/flap-pos-norm</property>
+      <factor>15</factor>
+	<center>
+	<x-m>0</x-m>
+	<y-m>0</y-m>
+	<z-m>0</z-m>
+	</center>
+	<axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>50</max-m>
+</animation>
+
+</PropertyList>

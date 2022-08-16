@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Red Arrows( pre 2005 )</name>
+     <texture-fuselage>liveries/red_arrows/RedArrowFuse.jpg</texture-fuselage>
+     <texture-wings>liveries/red_arrows/RedArrowWings.jpg</texture-wings>
+	  <texture-pilot>liveries/red_arrows/RA_pilot.png</texture-pilot>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

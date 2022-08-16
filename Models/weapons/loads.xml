@@ -1,0 +1,547 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	<!--back-->
+	<!--right -->
+	<!--up -->
+<model>
+<path>Aircraft/BAE-Hawk/Models/weapons/pylons.xml</path>
+<offsets>
+<x-m>-6.4</x-m>
+<y-m>0</y-m>
+<z-m>-0.1</z-m>
+<pitch-deg>0.0</pitch-deg>
+</offsets>
+</model>	
+
+<!--station left 1 -->
+<model>
+<name>left-AIM-9-pos-1</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/AIM9.xml</path>
+<offsets>
+<x-m>-6.4</x-m>
+<y-m>-10.15</y-m>
+<z-m>-0.18</z-m>
+<pitch-deg>-0.865</pitch-deg>
+</offsets>
+</model>	
+  
+<animation>
+<type>select</type>
+<object-name>left-AIM-9-pos-1</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[0]/selected</property>
+<value>AIM-9</value>
+</equals>
+<equals>
+<property>controls/armament/station[0]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation> 
+
+
+
+
+<!-- station left 2 -->
+  
+<model>
+<name>left-AIM-9-pos-2</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/AIM9.xml</path>
+<offsets>
+<x-m>-7.2</x-m>
+<y-m>-8.4</y-m>
+<z-m>-0.641</z-m>
+<pitch-deg>-0.865</pitch-deg>
+</offsets>
+</model>	
+
+
+<animation>
+<type>select</type>
+<object-name>left-AIM-9-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>AIM-9</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation> 
+
+<model>
+<name>left-MK82-pos-2</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/single-MK-82-LD.xml</path>
+<offsets>
+<x-m>0.2</x-m>
+<y-m>-3.35</y-m>
+<z-m>-0.4</z-m>
+<pitch-deg> -0.865 </pitch-deg>
+</offsets>
+</model>
+
+<animation>
+<type>select</type>
+<object-name>left-MK82-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>MK-82</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation> 
+
+<model>
+<name>left-alq-101-pos-2</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/alq101.xml</path>
+<offsets>
+<x-m>0.2</x-m>
+<y-m>-3.355</y-m>
+<z-m>-0.39</z-m>
+<pitch-deg>-0.885</pitch-deg>
+</offsets>
+</model>	
+
+
+<animation>
+<type>select</type>
+<object-name>left-alq-101-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>ALQ-101 ECM pod</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation> 
+
+	
+<!-- station left 3 -->
+ 
+<model>
+<name>left-Tank</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/tank1500.xml</path>
+<offsets>
+<x-m>-0.4</x-m>
+<y-m>-2.4</y-m>
+<z-m>-0.48</z-m>
+<pitch-deg>-1.74</pitch-deg>
+</offsets>
+</model>	
+<animation>
+<type>select</type>
+<object-name>left-Tank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[2]/selected</property>
+<value>1500 l Droptank</value>
+</equals>
+<equals>
+<property>controls/armament/station[2]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<model>
+<name>left-small-Tank</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/tank1000.xml</path>
+<offsets>
+<x-m>-0.4</x-m>
+<y-m>-2.4</y-m>
+<z-m>-0.4</z-m>
+<pitch-deg>-1.74</pitch-deg>
+</offsets>
+</model>	
+<animation>
+<type>select</type>
+<object-name>left-small-Tank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[2]/selected</property>
+<value>1000 l Droptank</value>
+</equals>
+<equals>
+<property>controls/armament/station[2]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation> 
+
+<model>
+<name>left-AIM-9-pos-3</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/AIM9.xml</path>
+<offsets>
+<x-m>-7.4</x-m>
+<y-m>-7.43</y-m>
+<z-m>-0.641</z-m>
+<pitch-deg>-0.865</pitch-deg>
+</offsets>
+</model>	
+<animation>
+<type>select</type>
+<object-name>left-AIM-9-pos-3</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[2]/selected</property>
+<value>AIM-9</value>
+</equals>
+<equals>
+<property>controls/armament/station[2]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>  
+
+
+<model>
+<name>left-MK82-pos-3</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/single-MK-82-LD.xml</path>
+<offsets>
+<x-m>-0.2</x-m>
+<y-m>-2.4</y-m>
+<z-m>-0.4</z-m>
+<pitch-deg> -0.865 </pitch-deg>
+</offsets>
+</model>
+
+<animation>
+<type>select</type>
+<object-name>left-MK82-pos-3</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[2]/selected</property>
+<value>MK-82</value>
+</equals>
+<equals>
+<property>controls/armament/station[2]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+	
+
+<!-- center station -->
+  
+<model>
+<name>center-tank</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/tank1000.xml</path>
+<offsets>
+<x-m>-0.4</x-m>
+<y-m>0.0</y-m>
+<z-m>-0.55</z-m>
+<pitch-deg>-1.8</pitch-deg>
+</offsets>
+</model>
+<animation>
+<type>select</type>
+<object-name>center-tank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[3]/selected</property>
+<value>1000 l Droptank</value>
+</equals>
+<equals>
+<property>controls/armament/station[3]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>			
+
+<model>
+<name>ADEN-Cannon</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/aden.xml</path>
+<offsets>
+<x-m>-6.4</x-m>
+<y-m>0</y-m>
+<z-m>-0.214</z-m>
+<pitch-deg>-0.865</pitch-deg>
+<roll-deg>0</roll-deg>
+</offsets>
+</model>	
+<animation>
+<type>select</type>
+<object-name>ADEN-Cannon</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[3]/selected</property>
+<value>ADEN-Cannon</value>
+</equals>
+<equals>
+<property>controls/armament/station[3]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<!-- station right 3 -->
+  
+<model>
+<name>right-Tank</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/tank1500.xml</path>
+<offsets>
+<x-m>-0.4</x-m>
+<y-m>2.3</y-m>
+<z-m>-0.4</z-m>
+<pitch-deg>-1.74</pitch-deg>
+		</offsets>
+	</model>	
+  <animation>
+    <type>select</type>
+    <object-name>right-Tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[4]/selected</property>
+          <value>1500 l Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[4]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+
+	<model>
+		<name>right-small-Tank</name>
+		<path>Aircraft/BAE-Hawk/Models/weapons/tank1000.xml</path>
+		<offsets>
+			<x-m>-0.4</x-m>
+			<y-m>2.3</y-m>
+			<z-m>-0.48</z-m>
+			<pitch-deg>-1.74</pitch-deg>
+		</offsets>
+	</model>	
+  <animation>
+    <type>select</type>
+    <object-name>right-small-Tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[4]/selected</property>
+          <value>1000 l Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[4]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+
+
+	<model>
+		<name>right-AIM-9-pos-3</name>
+		<path>Aircraft/BAE-Hawk/Models/weapons/AIM9.xml</path>
+		<offsets>
+			<x-m>-7.4</x-m>
+			<y-m>-2.78</y-m>
+			<z-m>-0.69</z-m>
+			<pitch-deg>-0.865</pitch-deg>
+		</offsets>
+	</model>	
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-9-pos-3</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[4]/selected</property>
+          <value>AIM-9</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[4]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+
+
+<model>
+<name>right-MK82-pos-3</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/single-MK-82-LD.xml</path>
+<offsets>
+<x-m>-0.2</x-m>
+<y-m>2.3</y-m>
+<z-m>-0.4</z-m>
+<pitch-deg> -0.865 </pitch-deg>
+</offsets>
+</model>
+
+<animation>
+<type>select</type>
+<object-name>right-MK82-pos-3</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[4]/selected</property>
+<value>MK-82</value>
+</equals>
+<equals>
+<property>controls/armament/station[4]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+	
+
+
+<!-- station right 2 -->
+
+
+<model>
+<name>right-AIM-9-pos-2</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/AIM9.xml</path>
+<offsets>
+<x-m>-7.15</x-m>
+<y-m>-1.76</y-m>
+<z-m>-0.65</z-m>
+<pitch-deg>-0.865</pitch-deg>
+</offsets>
+</model>	
+<animation>
+<type>select</type>
+<object-name>right-AIM-9-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[5]/selected</property>
+<value>AIM-9</value>
+</equals>
+<equals>
+<property>controls/armament/station[5]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>  
+	
+<model>
+<name>right-MK82-pos-2</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/single-MK-82-LD.xml</path>
+<offsets>
+<x-m>0.2</x-m>
+<y-m>3.35</y-m>
+<z-m>-0.4</z-m>
+<pitch-deg> -0.865 </pitch-deg>
+</offsets>
+</model>
+
+<animation>
+<type>select</type>
+<object-name>right-MK82-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[5]/selected</property>
+<value>MK-82</value>
+</equals>
+<equals>
+<property>controls/armament/station[5]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+	
+<model>
+<name>right-alq-101-pos-2</name>
+<path>Aircraft/BAE-Hawk/Models/weapons/alq101.xml</path>
+<offsets>
+<x-m>0.2</x-m>
+<y-m>3.35</y-m>
+<z-m>-0.39</z-m>
+<pitch-deg>-0.885</pitch-deg>
+</offsets>
+</model>	
+
+
+<animation>
+<type>select</type>
+<object-name>right-alq-101-pos-2</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[5]/selected</property>
+<value>ALQ-101 ECM pod</value>
+</equals>
+<equals>
+<property>controls/armament/station[5]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation> 
+
+
+<!--station right 1 -->
+  	<model>
+		<name>right-AIM-9-pos-1</name>
+		<path>Aircraft/BAE-Hawk/Models/weapons/AIM9.xml</path>
+		<offsets>
+			<x-m>-6.4</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>-0.221</z-m>
+			<pitch-deg>-0.865</pitch-deg>
+		</offsets>
+	</model>	
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-9-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[6]/selected</property>
+          <value>AIM-9</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[6]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+	
+
+</PropertyList>

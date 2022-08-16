@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Aircraft/Hawk/Models/weapons/ADENpod.ac</path>
+
+  <animation>
+    <object-name>aden</object-name>
+  </animation>
+
+<nasal>
+<guns>
+<file>Aircraft/Hawk/Models/weapons/aden/weapons.nas</file>
+<file>Aircraft/Hawk/Models/weapons/aden/revi.nas</file>
+</guns>
+
+</nasal>
+
+<input>
+
+<key n="101">
+    <name>e</name>
+    <desc>Guns</desc>
+    <binding>
+      <command>nasal</command>
+      <script>guns.fire_MG()</script>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>nasal</command>
+        <script>guns.stop_MG()</script>
+      </binding>
+    </mod-up>
+  </key>
+</input>
+
+
+<model>
+    <path>Aircraft/Hawk/Models/weapons/aden/fire.xml</path>
+    <offsets>
+      <x-m> -2.364 </x-m>
+      <y-m>  0.569 </y-m>
+      <z-m> -0.936 </z-m>
+     <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ 
+<fx>
+<guns>
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/Hawk/Models/weapons/aden/gunfire.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </guns>
+</fx>
+
+
+</PropertyList>

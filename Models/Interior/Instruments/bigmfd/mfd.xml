@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+
+  
+
+<model>
+    <path>big-mfd.ac</path>
+	<offsets>
+      <x-m> 0 </x-m>
+      <y-m>0 </y-m>
+      <z-m>0 </z-m>
+    </offsets>
+  </model>
+  
+ <model>
+		<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/bigmfd/map/map.xml</path>
+		<offsets>
+      <x-m>3.99</x-m>
+      <y-m>0 </y-m>
+      <z-m>1.255</z-m>
+	  <pitch-offset>0</pitch-offset>
+		</offsets>
+	</model> 
+
+	
+
+</PropertyList>
+

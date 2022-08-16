@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>eng-status.ac</path>
+ 
+
+ <animation>
+	 <type>select</type>
+	 <object-name>EngEstatus</object-name>
+	 <condition>   
+		 <equals>
+			 <property>controls/HSD/on-off</property>
+			 <value>0</value>
+		 </equals>
+	 </condition>
+ </animation>
+
+
+	<animation>
+		<type>rotate</type>
+		<object-name>rpm.L</object-name>
+		<property>engines/engine[0]/n1</property>
+		<factor>2</factor>
+		<center>
+			<x-m>0.0</x-m>
+			<y-m>-0.044</y-m>
+			<z-m>0.051</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>rpm1.L1</object-name>
+	 <property>engines/engine[0]/n1</property>
+	 <factor>0.001</factor>
+	 <step>100.0</step>
+	 <axis>
+		 <x>0</x>
+		 <y>-1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ 
+ 
+ 
+</PropertyList>

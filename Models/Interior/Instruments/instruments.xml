@@ -1,0 +1,835 @@
+<PropertyList>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/AI/ai.xml</path>
+<name>Attitude Indicator</name>
+ <offsets>
+  <pitch-deg>-8.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.45</x-m>
+  <y-m>0.000</y-m>
+  <z-m>0.805</z-m>
+ </offsets>
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Airspeed/airspeed.xml</path>
+<name>Airspeed knots</name>
+ <offsets>
+  <pitch-deg>-8.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.44</x-m>
+  <y-m>-0.08</y-m>
+  <z-m>0.79</z-m>
+ </offsets>
+</model>
+
+<model>
+<path>Aircraft/Instruments-3d/altimeter/altimeter.xml</path>
+<name>altimeter one</name>
+ <offsets>
+  <pitch-deg>-8.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.45</x-m>
+  <y-m>0.085</y-m>
+  <z-m>0.802</z-m>
+ </offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/mfd/MFD/mfd1.xml</path>
+<name>Left MFD</name>
+ <offsets>
+  <pitch-deg>-2.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.465</x-m>
+  <y-m>-0.21</y-m>
+  <z-m>0.73</z-m>
+
+ </offsets>  
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/mfd/MFD/mfd2.xml</path>
+<name>Centre MFD</name>
+ <offsets>
+  <pitch-deg>-2.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.465</x-m>
+  <y-m>0.00</y-m>
+  <z-m>0.68</z-m>
+
+ </offsets>  
+</model>
+
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/mfd/MFD/mfd3.xml</path>
+<name>Right MFD</name>
+ <offsets>
+  <pitch-deg>-2.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.465</x-m>
+  <y-m>0.22</y-m>
+  <z-m>0.73</z-m>
+
+ </offsets>  
+</model> 
+
+
+<!--
+<model>
+    <path>Aircraft/BAE-Hawk/Models/Interior/Instruments/HUD/optical-sight.xml</path>
+    <offsets>
+      <x-m> 2.37 </x-m>
+      <y-m> -0.3 </y-m>
+      <z-m> 0.94 </z-m>
+      <pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
+-->
+
+<model>
+    <path>Aircraft/BAE-Hawk/Models/Interior/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> 2.41 </x-m>
+      <y-m> -0.2 </y-m>
+      <z-m> 0.94 </z-m>
+      <pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <path>Aircraft/BAE-Hawk/Models/Interior/Instruments/GMeter/gmeter.xml</path>
+    <offsets>
+      <x-m> 2.45 </x-m>
+      <y-m> -0.11 </y-m>
+      <z-m> 0.88 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/BAE-Hawk/Models/Interior/Instruments/rpm/rpmN1L.xml</path>
+    <offsets>
+      <x-m> 2.45 </x-m>
+      <y-m> 0.095 </y-m>
+      <z-m> 0.88 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/flightindicator/flight-indicator.xml</path>
+<name>flight indicator</name>
+ <offsets>
+  <pitch-deg>-38.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.51</x-m>
+  <y-m>-0.35</y-m>
+  <z-m>0.569</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel.xml</path>
+<name>Front Fuselage tank</name>
+ <offsets>
+  <pitch-deg>-38.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.56</x-m>
+  <y-m>-0.40</y-m>
+  <z-m>0.505</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel1.xml</path>
+<name>Rear Fuselage tank</name>
+ <offsets>
+  <pitch-deg>-38.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.56</x-m>
+  <y-m>-0.345</y-m>
+  <z-m>0.505</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel2.xml</path>
+<name>Wing tank1</name>
+ <offsets>
+  <pitch-deg>-38.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.56</x-m>
+  <y-m>-0.29</y-m>
+  <z-m>0.505</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel3.xml</path>
+<name>Wing tank2</name>
+ <offsets>
+  <pitch-deg>-38.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.595</x-m>
+  <y-m>-0.29</y-m>
+  <z-m>0.455</z-m>
+
+ </offsets>  
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/epr/eprL.xml</path>
+<name>EPR</name>
+ <offsets>
+  <pitch-deg>-90.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.774</x-m>
+  <y-m>-0.28</y-m>
+  <z-m>0.367</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/egt/exh1.xml</path>
+<name>Wxhaust temp</name>
+ <offsets>
+  <pitch-deg>-90.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.774</x-m>
+  <y-m>-0.399</y-m>
+  <z-m>0.367</z-m>
+
+ </offsets>  
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/oilpressure/oilpressureL.xml</path>
+<name>Oil pressure</name>
+ <offsets>
+  <pitch-deg>-77.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.689</x-m>
+  <y-m>-0.398</y-m>
+  <z-m>0.385</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/oiltemp/oiltempL.xml</path>
+<name>Oil temp</name>
+ <offsets>
+  <pitch-deg>-77.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.689</x-m>
+  <y-m>-0.297</y-m>
+  <z-m>0.385</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/percentfuel/percentfuel.xml</path>
+<name>Percent Fuel</name>
+ <offsets>
+  <pitch-deg>-77.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.675</x-m>
+  <y-m>-0.345</y-m>
+  <z-m>0.386</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuelflow/FF.xml</path>
+<name>fuel flow</name>
+ <offsets>
+  <pitch-deg>-77.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.715</x-m>
+  <y-m>-0.345</y-m>
+  <z-m>0.376</z-m>
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/sas/A-10-sas.xml</path>
+<name>SAS</name>
+ <offsets>
+  <pitch-deg>90.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.49</x-m>
+  <y-m>-0.003</y-m>
+  <z-m>0.57</z-m>
+
+ </offsets>  
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/tacan/ARN-118-tacan.xml</path>
+<name>tacan</name>
+ <offsets>
+  <pitch-deg>20</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.69</x-m>
+  <y-m>0.34</y-m>
+  <z-m>0.384</z-m>
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/ils/A-10-ils.xml</path>
+<name>flight indicator</name>
+ <offsets>
+  <pitch-deg>60.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.616</x-m>
+  <y-m>0.339</y-m>
+  <z-m>0.42</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/radio/A-10-an-arc-186-2.xml</path>
+<name>Radio 2</name>
+ <offsets>
+  <pitch-deg>57.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.575</x-m>
+  <y-m>0.346</y-m>
+  <z-m>0.47</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/radio/A-10-an-arc-186-1.xml</path>
+<name>Radio 1</name>
+ <offsets>
+  <pitch-deg>57.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.545</x-m>
+  <y-m>0.346</y-m>
+  <z-m>0.513</z-m>
+
+ </offsets>  
+</model>  
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/nav/A-10-nav-mode-selector.xml</path>
+<name>Navigation</name>
+ <offsets>
+  <pitch-deg>-38.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.51</x-m>
+  <y-m>0.346</y-m>
+  <z-m>0.564</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/lights/light-left-panel.xml</path>
+<name>Lights</name>
+ <offsets>
+  <pitch-deg>0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>2.85</x-m>
+  <y-m>0.34</y-m>
+  <z-m>0.37</z-m>
+
+ </offsets>  
+</model>
+
+
+
+<!-- instructor's instruments -->
+
+<!-- Rear left -->
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/flightindicator/flight-indicator.xml</path>
+<name>flight indicator</name>
+ <offsets>
+  <pitch-deg>-33.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.0647</x-m>
+  <y-m>-0.35</y-m>
+  <z-m>0.81</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel.xml</path>
+<name>Front Fuselage tank</name>
+ <offsets>
+  <pitch-deg>-90.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.225</x-m>
+  <y-m>-0.28</y-m>
+  <z-m>0.667</z-m>
+
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel1.xml</path>
+<name>Rear Fuselage tank</name>
+ <offsets>
+  <pitch-deg>-90.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.281</x-m>
+  <y-m>-0.28</y-m>
+  <z-m>0.667</z-m>
+
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel2.xml</path>
+<name>Wing tank1</name>
+ <offsets>
+  <pitch-deg>-90.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.337</x-m>
+  <y-m>-0.28</y-m>
+  <z-m>0.667</z-m>
+
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuel/fuel3.xml</path>
+<name>Wing tank2</name>
+ <offsets>
+  <pitch-deg>-90.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.393</x-m>
+  <y-m>-0.28</y-m>
+  <z-m>0.667</z-m>
+
+
+ </offsets>  
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/epr/eprL.xml</path>
+<name>EPR</name>
+ <offsets>
+  <pitch-deg>-32.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.151</x-m>
+  <y-m>-0.29</y-m>
+  <z-m>0.6941</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/egt/exh1.xml</path>
+<name>Wxhaust temp</name>
+ <offsets>
+  <pitch-deg>-32.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.151</x-m>
+  <y-m>-0.36</y-m>
+  <z-m>0.6941</z-m>
+
+ </offsets>  
+</model>
+
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/oilpressure/oilpressureL.xml</path>
+<name>Oil pressure</name>
+ <offsets>
+  <pitch-deg>-90.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.286</x-m>
+  <y-m>-0.398</y-m>
+  <z-m>0.667</z-m>
+
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/oiltemp/oiltempL.xml</path>
+<name>Oil temp</name>
+ <offsets>
+  <pitch-deg>-90.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.23</x-m>
+  <y-m>-0.398</y-m>
+  <z-m>0.667</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/percentfuel/percentfuel.xml</path>
+<name>Percent Fuel</name>
+ <offsets>
+  <pitch-deg>-32.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.12</x-m>
+  <y-m>-0.29</y-m>
+  <z-m>0.74</z-m>
+
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Fuelflow/FF.xml</path>
+<name>fuel flow</name>
+ <offsets>
+  <pitch-deg>-32.5</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.12</x-m>
+  <y-m>-0.33</y-m>
+  <z-m>0.74</z-m>
+
+ </offsets>  
+</model>
+
+
+<!-- rear right consol  -->
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/nav/A-10-nav-mode-selector.xml</path>
+<name>Navigation</name>
+ <offsets>
+  <pitch-deg>-33.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.0714</x-m>
+  <x-m>2.51</x-m>
+  <y-m>0.346</y-m>
+  <z-m>0.81</z-m>
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/radio/A-10-an-arc-186-2.xml</path>
+<name>Radio 2</name>
+ <offsets>
+  <pitch-deg>57.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.1</x-m>
+  <x-m>2.51</x-m>
+  <y-m>0.346</y-m>
+  <z-m>0.76</z-m>
+
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/radio/A-10-an-arc-186-1.xml</path>
+<name>Radio 1</name>
+ <offsets>
+  <pitch-deg>57.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.13</x-m>
+  <x-m>2.51</x-m>
+  <y-m>0.346</y-m>
+  <z-m>0.71</z-m>
+
+
+ </offsets>  
+</model>  
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/tacan/ARN-118-tacan.xml</path>
+<name>tacan</name>
+ <offsets>
+  <pitch-deg>0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.33</x-m>
+  <y-m>0.34</y-m>
+  <z-m>0.665</z-m>
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/ils/A-10-ils.xml</path>
+<name>flight indicator</name>
+ <offsets>
+  <pitch-deg>0.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+   <x-m>4.27</x-m>
+  <y-m>0.34</y-m>
+  <z-m>0.665</z-m>
+
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/lights/light-left-panel.xml</path>
+<name>Lights</name>
+ <offsets>
+  <pitch-deg>0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.53</x-m>
+  <y-m>0.34</y-m>
+  <z-m>0.665</z-m>
+
+
+ </offsets>  
+</model>
+
+
+
+<!--  Main dash -->
+<!--
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/mfd/mfd1.xml</path>
+<name>Centre MFD</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>3.96</x-m>
+  <y-m>0.00</y-m>
+  <z-m>1.154</z-m>
+
+ </offsets>  
+</model>
+-->
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/bigmfd/mfd.xml</path>
+<name>Centre MFD</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>0.43</x-m>
+  <y-m>0</y-m>
+  <z-m>-0.95</z-m>
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/HUD/T2-wsohud.ac</path>
+<name>Centre MFD</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>0.43</x-m>
+  <y-m>0.00</y-m>
+  <z-m>-0.95</z-m>
+
+ </offsets>  
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/mfd/MFD/mfd2.xml</path>
+<name>Left MFD</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.02</x-m>
+  <y-m>-0.22</y-m>
+  <z-m>0.99</z-m>
+
+ </offsets>  
+</model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/mfd/MFD/mfd3.xml</path>
+<name>Right MFD</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.02</x-m>
+  <y-m>0.22</y-m>
+  <z-m>0.99</z-m>
+
+
+ </offsets>  
+</model> 
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/AI/ai.xml</path>
+<name>Attitude Indicator</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.015</x-m>
+  <y-m>0.000</y-m>
+  <z-m>0.99</z-m>
+ </offsets>
+</model>
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/Airspeed/airspeed.xml</path>
+<name>Airspeed knots</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.0</x-m>
+  <y-m>0.085</y-m>
+  <z-m>1.015</z-m>
+ </offsets>
+</model>
+
+<model>
+<path>Aircraft/Instruments-3d/altimeter/altimeter.xml</path>
+<name>altimeter one</name>
+ <offsets>
+  <pitch-deg>-14.9</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.055</x-m>
+  <y-m>0.085</y-m>
+  <z-m>0.93</z-m>
+ </offsets>
+</model>
+
+<model>
+    <path>Aircraft/BAE-Hawk/Models/Interior/Instruments/clock/clock.xml</path>
+    <offsets>
+<pitch-deg>-14.9</pitch-deg>
+      <x-m> 4.0 </x-m>
+      <y-m> -0.09 </y-m>
+      <z-m> 1.025 </z-m>
+      <pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+    <offsets>
+<pitch-deg>-14.9</pitch-deg>
+      <x-m> 4.05 </x-m>
+      <y-m> -0.09 </y-m>
+      <z-m> 0.93</z-m>
+      <pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+<path>Aircraft/BAE-Hawk/Models/Interior/Instruments/sas/A-10-sas.xml</path>
+<name>SAS</name>
+ <offsets>
+  <pitch-deg>90.0</pitch-deg>
+  <heading-deg>0</heading-deg>
+  <roll-deg>0</roll-deg>
+  <x-m>4.047</x-m>
+  <y-m>-0.001</y-m>
+  <z-m>0.83</z-m>
+
+ </offsets>  
+</model>
+
+
+</PropertyList>
