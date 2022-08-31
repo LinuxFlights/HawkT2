@@ -31,5 +31,21 @@
     </binding>
   </key>
 
+  <key n="100">
+
+  <name>d</name>
+
+  <desc>Crew door</desc>
+
+  <binding>
+
+   <command>nasal</command>
+
+   <script>doors.doorsystem.crewexport();</script>
+
+  </binding>
+
+ </key>
+
 </PropertyList>
 

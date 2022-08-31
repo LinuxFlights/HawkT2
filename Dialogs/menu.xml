@@ -13,6 +13,11 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Canopy (toggle)</label>
+        <command>nasal</command>
+        <script>BAE-Hawk.canopy.toggle();</script>
+      </item>
 	  <item>
         <label>Blue smoke</label>
         <binding>

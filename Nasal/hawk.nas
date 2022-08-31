@@ -1,6 +1,6 @@
-#### Typhonn systems	
-#### crazy dj nasal from many sources...
-#### and also, almursi work
+#### Hawk Systems
+#### By Linux-Gamer (Linux Flights)
+#### and other unknown contributors
 
 
 
@@ -18,9 +18,10 @@ setprop("instrumentation/tacan/frequencies/selected-channel[12]", 2);
 # turn off hud in external views
 #  setlistener("/sim/current-view/view-number", func(n) { setprop("/sim/hud/visibility[1]", n.getValue() == 0) },1);
 
-var canopy = aircraft.door.new ("/controls/canopy/", 3);
+var canopy = aircraft.door.new ("/controls/canopy/", 5);
 
-aircraft.livery.init("Aircraft/Jaguar/Models/Liveries");
+
+aircraft.livery.init("Aircraft/BAE-Hawk/Models/Liveries");
 
 
 

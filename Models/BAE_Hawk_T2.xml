@@ -417,6 +417,34 @@ if(navStillOn) {
 </animation>
 
 <animation>
+  <name>canopy</name>
+  <object-name>canopy2</object-name>
+  <object-name>canopy3</object-name>
+  <object-name>canopybolt</object-name>
+  <object-name>canopyframe</object-name>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>canopy</object-name>
+  <property>instrumentation/doors/crew/position-norm</property>
+  <factor>-75</factor> <!-- The rotation in degrees -->
+ <center>
+  <x-m> 4.88772</x-m>
+  <y-m> -0.467528</y-m>
+  <z-m> 1.34771</z-m>
+ </center>
+ <axis>
+  <x1-m> 4.88772</x1-m>
+  <y1-m> -0.467528</y1-m>
+  <z1-m> 1.34771</z1-m>
+  <x2-m> 3.49442</x2-m>
+  <y2-m> -0.481481</y2-m>
+  <z2-m> 0.969625</z2-m>
+ </axis>
+</animation>
+
+<animation>
  <type>translate</type>
  <object-name>N.Strut</object-name>
  <object-name>N.Wheel</object-name>

@@ -5,7 +5,7 @@
  <sim>
 
   <description>BAE_Hawk T2(YASim).</description>
-  <author>Daniel "Intel-Qube" Strawn, StuartC, Linux-Gamer (Linux-Flights)</author>
+  <author>Daniel "Intel-Qube" Strawn, StuartC, Linux-Gamer (Linux Flights)</author>
 <aircraft-version>2.9.9</aircraft-version>
     <status>2.9.9 BETA</status>
 	<rating>
@@ -298,11 +298,19 @@
      <name>Ctrl+b</name>
      <desc>Airbrake Toggle</desc>
    </key>
+   <key>
+      <name>Ctrl+d</name>
+	  <desc>Toggle Canopy</desc>
+	  <binding>
+	  <command>nasal</command>
+      <script>BAE-Hawk.canopy.toggle();</script>
+	  </binding>
+	</key>
    <line> Take off and landing speeds relate to a clean aircaft.</line>
 	<line>Take-Off:</line>
 	<line>Increase throttle to %100.
-You needn't use flaps on take off. Press CTRL-B to release the parking brake.
-Push up at 150-170kts.</line>
+You needn't use flaps on take off. Press Shift+B to release the parking brake.
+Pull up at 150-170kts.</line>
 	<line>Landing:</line>
 	<line>Extend flaps to first seting and reduced speed to about 140kts.
 Once you hit the run-way, reduce throttle completely,
@@ -764,8 +772,7 @@ engage the wheel brakes and deploy the airbrake.
           engine1.init();
         }, 0, 0);
        </script>
-    </engines>
-
+</engines>
  </nasal>
 
 </PropertyList>
