@@ -14,9 +14,9 @@
         </binding>
       </item>
       <item>
-        <label>Canopy (toggle)</label>
+        <label>Ladder (toggle)</label>
         <command>nasal</command>
-        <script>BAE-Hawk.canopy.toggle();</script>
+        <script>BAE-Hawk.ladder.toggle();</script>
       </item>
 	  <item>
         <label>Blue smoke</label>

@@ -445,6 +445,12 @@ if(navStillOn) {
 </animation>
 
 <animation>
+<type>select</type>
+<object-name>ladder</object-name>
+<property>instrumentation/doors/crew/position-norm</property>
+</animation>
+
+<animation>
  <type>translate</type>
  <object-name>N.Strut</object-name>
  <object-name>N.Wheel</object-name>
