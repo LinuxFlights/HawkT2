@@ -1,2 +1,2 @@
-# HawkT1
-Hawk T1 Aircraft Addon for Flightgear flight simulator - based on the FGUK Hawk T1
+# HawkT2 
+Hawk T2 Aircraft Addon for Flightgear flight simulator - based on the FGUK Hawk T2
